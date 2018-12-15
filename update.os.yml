@@ -1,0 +1,9 @@
+---
+- name: update os
+  hosts: all
+  tasks: 
+    - name: update kernel on all
+      package:
+        name: "*"
+        state: latest
+

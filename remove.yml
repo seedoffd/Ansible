@@ -1,0 +1,8 @@
+---
+- name: install multiple packages
+  hosts: all
+  tasks: 
+    - name: install tree package
+      package: 
+        name: tree
+        state: absent
